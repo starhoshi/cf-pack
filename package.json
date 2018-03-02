@@ -1,0 +1,40 @@
+{
+  "name": "cf-pack",
+  "version": "0.0.1",
+  "description": "Cloud Functions library pack",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tslint -p tslint.json && tsc -d",
+    "publish:patch": "yarn run build && npm version patch && git push origin master && git push origin --tags && npm publish --access=public",
+    "publish:minor": "yarn run build && npm version minor && git push origin master && git push origin --tags && npm publish --access=public",
+    "publish:major": "yarn run build && npm version major && git push origin master && git push origin --tags && npm publish --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starhoshi/cf-pack.git"
+  },
+  "keywords": [
+    "firebase",
+    "firestore",
+    "cloudfunctions"
+  ],
+  "author": "star__hoshi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/starhoshi/cf-pack/issues"
+  },
+  "homepage": "https://github.com/starhoshi/cf-pack#readme",
+  "dependencies": {
+    "@star__hoshi/orderable": "^0.6.7",
+    "event-response": "^0.2.6",
+    "fire-slack": "^0.2.3",
+    "mission-completed": "^0.1.8",
+    "retrycf": "^0.2.8"
+  },
+  "devDependencies": {
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2"
+  }
+}
