@@ -28,6 +28,8 @@
   "homepage": "https://github.com/starhoshi/cf-pack#readme",
   "dependencies": {
     "@star__hoshi/orderable": "^0.6.7",
+    "@types/request-promise": "^4.1.41",
+    "@types/stripe": "^5.0.6",
     "event-response": "^0.2.6",
     "fire-slack": "^0.2.3",
     "mission-completed": "^0.1.8",
