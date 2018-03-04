@@ -1,6 +1,6 @@
 {
   "name": "cf-pack",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Cloud Functions library pack",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
